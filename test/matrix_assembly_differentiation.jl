@@ -4,7 +4,7 @@ using MarineHydro
 using PyCall
 using LinearAlgebra
 
-@testset "Matrix Differentiability Tests" begin
+@testset "Matrix assembly differentiation" begin
     mesh = MarineHydro.Mesh(MarineHydro.example_mesh_from_capytaine())
     green_functions = (Rankine(), RankineReflected(), GFWu())
 
